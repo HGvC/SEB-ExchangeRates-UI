@@ -1,0 +1,18 @@
+<div *ngIf="rowData">
+    <div class="ag-theme-alpine">
+        <ag-grid-angular
+            style="height: 460px; width: 1200px"
+            [gridOptions]="gridOptions"
+            [columnDefs]="columnDefs"
+            [rowData]="rowData"
+            headerHeight="46"
+            rowHeight="46"
+            suppressRowClickSelection
+            toolPanelSuppressGroups
+            toolPanelSuppressValues
+            rowSelection="multiple"
+            (gridReady)="onReady($event)"
+        >
+        </ag-grid-angular>
+    </div>
+</div>

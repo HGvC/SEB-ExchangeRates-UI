@@ -1,5 +1,5 @@
+import { DatePipe } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { RatesGridComponent } from './rates-grid.component';
 
 describe('RatesGridComponent', () => {
@@ -8,7 +8,8 @@ describe('RatesGridComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [RatesGridComponent]
+            declarations: [RatesGridComponent],
+            providers: [DatePipe]
         }).compileComponents();
     });
 
